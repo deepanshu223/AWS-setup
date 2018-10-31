@@ -49,7 +49,7 @@ apt-get -y install curl zip unzip
 apt-get -y install apache2
 add-apt-repository -y ppa:ondrej/php
 apt update
-apt-get -y install php5.6 php5.6-mcrypt php5.6-curl
+apt-get -y install php5.6 php5.6-mcrypt php5.6-curl php5.6-mysql
 apt-get -y install mysql-server
 
 
@@ -137,7 +137,7 @@ while true; do
 	esac
 done
 
-fallocate -l $DIVIDER /swapfile
+fallocate -l $SWAP_SPACE /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
