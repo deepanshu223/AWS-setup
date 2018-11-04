@@ -57,7 +57,7 @@ wget http://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz
 
 # Rename wordpress directory to blog
-mv wordpress ../$INSTALL_PATH
+mv wordpress $INSTALL_PATH
 
 # Change directory to blog
 cd $BASE_PATH/$INSTALL_PATH
